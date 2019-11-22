@@ -1,9 +1,2 @@
 #!/bin/bash
-echo "---------------- stoping server -------------------"
-
-pid=`ps -ef | grep $1 | grep -v grep | awk '{print $2}'`
-
-if [ -n "$pid" ];then
-  echo "kill -9 pid:"$pid
-  kill -9 $pid
-fi
+kill -9 $(ps -ef|grep mybatinsplus-0.0.1-SNAPSHOT.jar|grep -v grep|awk '{print $2}')
