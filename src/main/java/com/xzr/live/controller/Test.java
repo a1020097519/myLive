@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Test {
 
-    @GetMapping("/hi1")
+    @GetMapping("/hi2")
     public String sayHi(){
-        return "hi1";
+        return "hi2";
     }
 }
